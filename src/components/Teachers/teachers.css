@@ -1,0 +1,61 @@
+.add_btn{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: rgb(0, 255, 89);
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+
+}
+.add_btn:hover{
+    background-color: rgb(0, 213, 32);
+}
+.teacher_list{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30vw;
+
+
+}
+.teacher_list_con{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 85vw;
+    gap: 20px;
+
+}
+.teacher_list span{
+    font-size: larger;
+    color: black;
+
+}
+.pages_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+.pages_about{
+    display: flex;
+    gap: 10px;
+}
+.pages_about span{
+    margin-top: 15px;
+}
+@media (max-width: 600px) {
+    .teacher_list_con{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .teacher_list{
+        width: 100%;
+    }
+}

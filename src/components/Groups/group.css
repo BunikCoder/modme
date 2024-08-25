@@ -1,0 +1,36 @@
+.groups_search{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.groups_search input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.groups_search fieldset{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.group_about{
+    display: flex;
+    justify-content: space-between;
+}
+.group{
+    margin-bottom: 15px;
+}
+#close_btn{
+    outline: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: navajowhite;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}

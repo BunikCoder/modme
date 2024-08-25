@@ -6,33 +6,47 @@ import { LiaAddressBookSolid } from "react-icons/lia";
 import { RiTeamLine } from "react-icons/ri";
 import { MdOutlineDownloading } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 function Category() {
   return (
     <div className='category_con'>
         <ul>
             <li>
-                <PiStudentThin  className='category_icons' size={50}/>
-                <span>Talabalar</span>
+                <a href="#">
+                    <PiStudentThin  className='category_icons' size={50}/>
+                    <span>Talabalar</span>
+                </a>
             </li>
             <li>
-                <PiChalkboardTeacherThin size={50}/>
-                <span>O'qituvchilar</span>
+                <Link to={'/teachers'}>
+                    <PiChalkboardTeacherThin size={50}/>
+                    <span>O'qituvchilar</span>
+                </Link>
             </li>
             <li>
-                <LiaAddressBookSolid size={50}/>
-                <span>Kurslar</span>
+                <a href="#">
+                    <LiaAddressBookSolid size={50}/>
+                    <span>Kurslar</span>
+                </a>
             </li>
             <li>
-                <RiTeamLine size={50}/>
-                <span>Guruhlar</span>
+                <Link to={'/group'}>
+                    <RiTeamLine size={50}/>
+                    <span>Guruhlar</span>
+                </Link>
             </li>
             <li>
-                <MdOutlineDownloading size={50}/>
-                <span>Listlar</span>
+                <a href="#">
+                    <MdOutlineDownloading size={50}/>
+                    <span>Listlar</span>
+                </a>
             </li>
             <li>
-                <IoSettingsOutline size={50}/>
-                <span>Sozlamalar</span>
+                <a href="#">
+                    <IoSettingsOutline size={50}/>
+                    <span>Sozlamalar</span>
+                </a>
             </li>
         </ul>
     </div>
